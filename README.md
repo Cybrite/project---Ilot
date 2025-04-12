@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# Ilot
 
-## Project info
+## A Spiritual Charity Platform
 
-**URL**: https://lovable.dev/projects/342aff6d-2560-44db-9844-ea83e2b96614
+Ilot is a community-driven platform that bridges spiritual practices with charitable giving. Our mission is to create meaningful connections between spiritual communities and those in need, fostering compassion and mindful generosity.
 
-## How can I edit this code?
+![Ilot Platform](https://res.cloudinary.com/dqqyuvg1v/image/upload/v1744479112/Give-Gita_sm3u3e.jpg)
 
-There are several ways of editing your application.
+## 🌟 Features
 
-**Use Lovable**
+- **Meditation for Charity**: Track meditation minutes that convert to donations
+- **Community Events**: Find and join spiritual gatherings with charitable components
+- **Donation Tracking**: Transparent reporting of all charitable contributions
+- **Resources Library**: Access spiritual teachings that emphasize service
+- **Volunteer Matching**: Connect with charitable organizations based on your spiritual values
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/342aff6d-2560-44db-9844-ea83e2b96614) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React.js
+- **Styling**: Tailwind CSS
+- **State Management**: Redux
+- **Authentication**: Firebase Auth
+- **Database**: Firestore
+- **Deployment**: Vercel
 
-**Use your preferred IDE**
+## 🚀 Getting Started
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Prerequisites
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+- Node.js (v16.0 or higher)
+- npm or yarn
 
-Follow these steps:
+### Installation
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your-username/ilot.git
+   cd ilot
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+2. Install dependencies:
+   ```bash
+   npm install
+   # or with yarn
+   yarn install
+   ```
 
-# Step 3: Install the necessary dependencies.
-npm i
+3. Create a `.env` file in the root directory with your environment variables:
+   ```
+   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
+   REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+   REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+4. Start the development server:
+   ```bash
+   npm start
+   # or with yarn
+   yarn start
+   ```
 
-**Edit a file directly in GitHub**
+5. Open [http://localhost:8080](http://localhost:8080) in your browser to see the application.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🤝 How to Contribute
 
-**Use GitHub Codespaces**
+We welcome contributions from developers, designers, spiritual practitioners, and charitable organizations!
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### Development Contributions
 
-## What technologies are used for this project?
+1. **Fork the Repository**: Create your own copy of the project.
 
-This project is built with:
+2. **Create a Branch**: 
+   ```bash
+   git checkout -b feature/your-feature-name
+   ```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **Make Your Changes**: Implement your feature or bug fix.
 
-## How can I deploy this project?
+4. **Follow Coding Standards**:
+   - Use functional components and hooks in React
+   - Follow Tailwind CSS class naming conventions
+   - Write descriptive commit messages
+   - Add comments for complex logic
 
-Simply open [Lovable](https://lovable.dev/projects/342aff6d-2560-44db-9844-ea83e2b96614) and click on Share -> Publish.
+5. **Test Your Changes**: Ensure your code works as expected and doesn't break existing functionality.
 
-## Can I connect a custom domain to my Lovable project?
+6. **Submit a Pull Request**: Push your changes to your fork and submit a pull request to the main repository.
+   - Provide a clear description of the changes
+   - Reference any related issues
+   - Include screenshots if UI changes were made
 
-Yes it is!
+### Non-Code Contributions
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- **Content Creation**: Help with spiritual resources, blog posts, or documentation
+- **Design**: Contribute UI/UX improvements, illustrations, or graphics
+- **Translation**: Help translate the platform to reach more communities
+- **Testing**: Report bugs or suggest improvements
+- **Outreach**: Connect us with spiritual or charitable organizations
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Code of Conduct
+
+- Be respectful and inclusive
+- Practice compassionate communication
+- Embrace diverse spiritual backgrounds
+- Focus on the shared goal of charitable service
+
+---
+
+*"In giving, we receive. In serving, we grow."*
