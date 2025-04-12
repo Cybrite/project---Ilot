@@ -1,112 +1,130 @@
-# Ilot
+# GIVE GITA - A Spiritual Learning Platform
 
-## A Spiritual Charity Platform
+GIVE GITA is a comprehensive mobile application designed to facilitate spiritual growth through the teachings of Bhagavad Gita. The app integrates daily inspiration, courses, events, donations, and community features to support users on their spiritual journey.
 
-Ilot is a community-driven platform that bridges spiritual practices with charitable giving. Our mission is to create meaningful connections between spiritual communities and those in need, fostering compassion and mindful generosity.
+![GIVE GITA Platform](https://res.cloudinary.com/dqqyuvg1v/image/upload/v1744479112/Give-Gita_sm3u3e.jpg)
 
-![Ilot Platform](https://res.cloudinary.com/dqqyuvg1v/image/upload/v1744479112/Give-Gita_sm3u3e.jpg)
+## 🌟 Key Features
 
-## 🌟 Features
+### Core Functionality
+- **User Authentication**: Mobile OTP login with profile setup
+- **Daily Inspiration**: Verse/quote/darshan picture/video clip to start your day
+- **Mantra Player**: One-touch Hare Krishna Maha Mantra playback
+- **Guest Mode**: Limited access for non-registered users
 
-- **Meditation for Charity**: Track meditation minutes that convert to donations
-- **Community Events**: Find and join spiritual gatherings with charitable components
-- **Donation Tracking**: Transparent reporting of all charitable contributions
-- **Resources Library**: Access spiritual teachings that emphasize service
-- **Volunteer Matching**: Connect with charitable organizations based on your spiritual values
+### Learning Management
+- **Structured Courses**: With beginner/intermediate/advanced levels
+- **Dual Learning Modes**: 
+  - *Drive Mode*: Audio-only with certificate exam
+  - *Normal Mode*: Full-featured with videos and quizzes
+- **Progress Tracking**: With completion certificates
+- **Personal Mentorship**: WhatsApp support for each learner
+- **Gurukul Integration**: Online classes with teacher/student portals
 
-## 🛠️ Tech Stack
+### Community & Engagement
+- **Event Management**: Festivals, GITA Olympiad, Ekadashi reminders
+- **Live Streaming**: With Zoom integration for webinars
+- **Testimonials & Wisdom**: User stories and latest social content
+- **Referral Program**: Earn points for spiritual gifts
 
-- **Frontend**: React.js
-- **Styling**: Tailwind CSS
-- **State Management**: Redux
-- **Authentication**: Firebase Auth
-- **Database**: Firestore
-- **Deployment**: Vercel
+### Spiritual Services
+- **Sadhana Tools**: 
+  - Aarti section with lyrics and live darshan
+  - Vaishnava calendar with location-based Ekadashi dates
+  - Chanting counter and meditation tracker
+- **Diksha Portal**: Application and progress system
+- **Birthday Management**: Tithi finder with donation options
+
+### Donation & Commerce
+- **Multiple Donation Channels**: 
+  - Nityam Bhagavata Sewa (monthly/yearly)
+  - Festival/event specific giving
+  - Vidya Daan for education
+- **Spiritual Shop**: Devotional items, books, and Gaushala products
+- **Transparent Giving**: With automatic email confirmations
+
+## 🛠️ Technical Implementation
+
+### Tech Stack
+- **Frontend**: React Native (for cross-platform mobile support)
+- **Styling**: Tailwind CSS with custom spiritual theme
+- **State Management**: Redux for complex application state
+- **Authentication**: Firebase Auth with OTP verification
+- **Database**: Firestore for real-time data
+- **Video Integration**: Zoom/Google Meet APIs for live sessions
+- **Payment Gateways**: Support for national/international donations
+- **Deployment**: App Store and Google Play Store
 
 ## 🚀 Getting Started
 
 ### Prerequisites
-
 - Node.js (v16.0 or higher)
-- npm or yarn
+- React Native development environment
+- Android Studio/Xcode for emulators
+- Firebase project configuration
 
 ### Installation
-
 1. Clone the repository:
    ```bash
-   git clone https://github.com/your-username/ilot.git
-   cd ilot
+   git clone https://github.com/give-gita/app.git
+   cd app
    ```
 
 2. Install dependencies:
    ```bash
    npm install
-   # or with yarn
+   # or
    yarn install
    ```
 
-3. Create a `.env` file in the root directory with your environment variables:
+3. Configure environment variables:
    ```
-   REACT_APP_FIREBASE_API_KEY=your_firebase_api_key
-   REACT_APP_FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
-   REACT_APP_FIREBASE_PROJECT_ID=your_firebase_project_id
-   REACT_APP_FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
-   REACT_APP_FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
-   REACT_APP_FIREBASE_APP_ID=your_firebase_app_id
+   REACT_APP_FIREBASE_API_KEY=your_key
+   REACT_APP_FIREBASE_AUTH_DOMAIN=your_domain
+   REACT_APP_FIREBASE_PROJECT_ID=your_project
+   REACT_APP_ZOOM_API_KEY=your_zoom_key
+   REACT_APP_PAYMENT_GATEWAY_ID=your_payment_id
    ```
 
-4. Start the development server:
+4. Run on Android/iOS:
    ```bash
-   npm start
-   # or with yarn
-   yarn start
+   npx react-native run-android
+   # or
+   npx react-native run-ios
    ```
 
-5. Open [http://localhost:8080](http://localhost:8080) in your browser to see the application.
+## 🤝 Contribution Guidelines
 
-## 🤝 How to Contribute
+We welcome contributions from developers, spiritual practitioners, and content creators.
 
-We welcome contributions from developers, designers, spiritual practitioners, and charitable organizations!
+### Development Areas
+1. **Core App Features**:
+   - LMS system enhancements
+   - Live streaming integrations
+   - Notification systems
 
-### Development Contributions
+2. **Spiritual Content**:
+   - Course material development
+   - Daily inspiration content
+   - Translation/localization
 
-1. **Fork the Repository**: Create your own copy of the project.
+3. **UI/UX Improvements**:
+   - Meditation/chanting interfaces
+   - Donation flow optimization
+   - Accessibility features
 
-2. **Create a Branch**: 
-   ```bash
-   git checkout -b feature/your-feature-name
-   ```
-
-3. **Make Your Changes**: Implement your feature or bug fix.
-
-4. **Follow Coding Standards**:
-   - Use functional components and hooks in React
-   - Follow Tailwind CSS class naming conventions
-   - Write descriptive commit messages
-   - Add comments for complex logic
-
-5. **Test Your Changes**: Ensure your code works as expected and doesn't break existing functionality.
-
-6. **Submit a Pull Request**: Push your changes to your fork and submit a pull request to the main repository.
-   - Provide a clear description of the changes
-   - Reference any related issues
-   - Include screenshots if UI changes were made
-
-### Non-Code Contributions
-
-- **Content Creation**: Help with spiritual resources, blog posts, or documentation
-- **Design**: Contribute UI/UX improvements, illustrations, or graphics
-- **Translation**: Help translate the platform to reach more communities
-- **Testing**: Report bugs or suggest improvements
-- **Outreach**: Connect us with spiritual or charitable organizations
+### Contribution Process
+1. Fork the repository and create a feature branch
+2. Follow our coding standards and spiritual guidelines
+3. Submit pull requests with clear descriptions
+4. Include appropriate test cases for new features
 
 ### Code of Conduct
-
-- Be respectful and inclusive
+- Maintain reverence for spiritual content
+- Respect all paths of devotion
 - Practice compassionate communication
-- Embrace diverse spiritual backgrounds
-- Focus on the shared goal of charitable service
+- Ensure accessibility for diverse users
 
 ---
 
-*"In giving, we receive. In serving, we grow."*
+*"The soul is eternal, and the Gita's wisdom illuminates our path to divine connection."* - Inspired by Srila Prabhupada

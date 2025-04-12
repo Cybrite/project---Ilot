@@ -1,8 +1,7 @@
-
-import React, { useState, useRef, useEffect } from 'react';
-import { Play, Pause, Volume2, VolumeX } from 'lucide-react';
-import { Button } from '@/components/ui/button';
-import { Slider } from '@/components/ui/slider';
+import React, { useState, useRef, useEffect } from "react";
+import { Play, Pause, Volume2, VolumeX } from "lucide-react";
+import { Button } from "@/components/ui/button";
+import { Slider } from "@/components/ui/slider";
 // import { toast } from 'sonner';
 
 export const MantraPlayer = () => {
@@ -11,16 +10,17 @@ export const MantraPlayer = () => {
   const [volume, setVolume] = useState(0.7);
   const [prevVolume, setPrevVolume] = useState(0.7);
   const audioRef = useRef<HTMLAudioElement | null>(null);
-  
+
   // Initialize audio on component mount
   useEffect(() => {
-    audioRef.current = new Audio('/hare-krishna-maha-mantra.mp3');
+    audioRef.current = new Audio("/hare-krishna-maha-mantra.mp3");
     audioRef.current.loop = true;
     audioRef.current.volume = volume;
-    
+
     // For development placeholder (remove in production)
-    audioRef.current.src = 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3';
-    
+    audioRef.current.src =
+      "https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3";
+
     return () => {
       if (audioRef.current) {
         audioRef.current.pause();
@@ -28,7 +28,7 @@ export const MantraPlayer = () => {
       }
     };
   }, []);
-  
+
   // Update audio volume when volume state changes
   useEffect(() => {
     if (audioRef.current) {
@@ -42,8 +42,8 @@ export const MantraPlayer = () => {
         audioRef.current.pause();
         // toast.info('Hare Krishna Maha Mantra paused');
       } else {
-        audioRef.current.play().catch(error => {
-          console.error('Error playing audio:', error);
+        audioRef.current.play().catch((error) => {
+          console.error("Error playing audio:", error);
           // toast.error('Could not play the audio. Please try again.');
         });
         // toast.success('Playing Hare Krishna Maha Mantra');
@@ -66,7 +66,7 @@ export const MantraPlayer = () => {
   const handleVolumeChange = (value: number[]) => {
     const newVolume = value[0];
     setVolume(newVolume);
-    
+
     if (newVolume === 0) {
       setIsMuted(true);
     } else if (isMuted) {
@@ -81,12 +81,20 @@ export const MantraPlayer = () => {
           variant="outline"
           size="icon"
           onClick={togglePlay}
-          className={`rounded-full border-none ${isPlaying ? 'bg-saffron-100 text-saffron-600' : 'bg-saffron-500 text-white'} hover:bg-saffron-600 hover:text-white`}
-          aria-label={isPlaying ? 'Pause Mantra' : 'Play Mantra'}
+          className={`rounded-full border-none ${
+            isPlaying
+              ? "bg-saffron-100 text-saffron-600"
+              : "bg-saffron-500 text-white"
+          } hover:bg-saffron-600 hover:text-white`}
+          aria-label={isPlaying ? "Pause Mantra" : "Play Mantra"}
         >
-          {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}
+          {isPlaying ? (
+            <Pause className="h-4 w-4" />
+          ) : (
+            <Play className="h-4 w-4" />
+          )}
         </Button>
-        
+
         <div className="hidden md:flex items-center ml-1 gap-2 pr-1">
           <Button
             variant="ghost"
@@ -94,9 +102,13 @@ export const MantraPlayer = () => {
             onClick={toggleMute}
             className="rounded-full h-8 w-8 p-0 text-saffron-700 hover:text-saffron-800 hover:bg-saffron-50"
           >
-            {isMuted ? <VolumeX className="h-4 w-4" /> : <Volume2 className="h-4 w-4" />}
+            {isMuted ? (
+              <VolumeX className="h-4 w-4" />
+            ) : (
+              <Volume2 className="h-4 w-4" />
+            )}
           </Button>
-          
+
           <div className="w-20">
             <Slider
               defaultValue={[volume]}

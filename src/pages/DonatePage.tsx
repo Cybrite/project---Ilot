@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Card, CardContent } from "@/components/ui/card";
 import { Heart, Gift, BookOpen, Building, Coffee } from 'lucide-react';

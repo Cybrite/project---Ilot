@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { Home, BookOpen, Calendar, Music, HelpCircle, FileText, ShoppingBag, Heart } from 'lucide-react';
 

@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Calendar, MapPin, Users } from 'lucide-react';
 

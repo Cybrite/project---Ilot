@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Layout } from '@/components/Layout';
 import { DailyInspiration } from '@/components/home/DailyInspiration';
 import { EventBanner } from '@/components/home/EventBanner';

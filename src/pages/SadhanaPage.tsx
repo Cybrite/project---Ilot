@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Layout } from '@/components/Layout';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Music, Calendar, Flame, BookOpen } from 'lucide-react';

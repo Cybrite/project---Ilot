@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { PhoneLogin } from '@/components/auth/PhoneLogin';
 
 const LoginPage = () => {

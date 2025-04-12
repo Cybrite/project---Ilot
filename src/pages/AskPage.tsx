@@ -1,5 +1,3 @@
-
-import React from 'react';
 import { Layout } from '@/components/Layout';
 import { HelpCircle, SendHorizontal, Plus, Search } from 'lucide-react';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
