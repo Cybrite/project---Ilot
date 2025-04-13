@@ -30,7 +30,7 @@ const inspirations = [
     type: "video",
     content: "Divine leela of Lord Krishna",
     source: "Bhakt Bhagwat",
-    video: "https://www.youtube.com/embed/dQw4w9WgXcQ", // Placeholder, replace with real video link
+    video: "https://www.youtube.com/embed/Zdcth9NndEA?si=-paymptxjpbblZHn", // Placeholder, replace with real video link
   },
 ];
 
