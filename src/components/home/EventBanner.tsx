@@ -9,7 +9,7 @@ const events = [
     id: 1,
     title: "Krishna Janmashtami",
     description:
-      "Celebrate the divine appearance of Lord Krishna with kirtan, offerings and feast.",
+      "Celebrate the divine appearance of Lord Krishna with Kirtan, Offerings and Feast.",
     date: "August 15, 2025",
     image: "https://picsum.photos/id/1/1200/400", // Placeholder image
     link: "/events/janmashtami",
